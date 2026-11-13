@@ -243,24 +243,8 @@ A trained model (v1.0.0) is already committed in `backend/artifacts/`, so the ap
   versions that were used.
 - `requirements-ml.txt` pins those versions.
 
-## 16. Vercel deployment
 
-`vercel.json` deploys **one project with two services**: Next.js at `/` and FastAPI at `/api`. A local
-`vercel build` with this configuration succeeded.
-
-```bash
-npm i -g vercel && vercel login
-vercel          # preview
-vercel --prod   # production
-```
-
-You can also import the GitHub repository in the Vercel dashboard and keep the root directory as is. A fallback with
-two separate projects and the production smoke-test checklist are in [`docs/deployment.md`](docs/deployment.md).
-
-**Live URL:** *not yet deployed.* Deployment needs the owner's Vercel account. Add the URL here once the
-smoke-test checklist passes.
-
-## 17. Limitations
+## 16. Limitations
 
 - Modest discrimination (ROC-AUC ≈ 0.67). Precision of about 18% at the default threshold means many false alerts.
 - The model has not been validated externally, prospectively or temporally. It is not suitable for clinical use.
@@ -274,7 +258,7 @@ smoke-test checklist passes.
 - Monitoring covers inputs and predictions only. No outcome labels are collected, so live performance is not measured.
 - The prediction-volume history is stored per browser, because the serverless deployment keeps no server-side state.
 
-## 18. Future improvements
+## 17. Future improvements
 
 - **Validation:** temporal and external validation on recent data, and decision-curve and net-benefit analysis
   with clinicians.
