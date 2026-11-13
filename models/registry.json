@@ -1,0 +1,19 @@
+{
+ "versions": [
+  {
+   "model_version": "1.0.0",
+   "model_name": "Gradient Boosting",
+   "trained_at": "2026-11-12T19:27:15+00:00",
+   "dataset_sha256": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+   "config_sha256": "097ce4bf57e78f299043d2227716f4186b447839723d4fc18964548f34f3b22e",
+   "quick": false,
+   "test_pr_auc": 0.23095470553477282,
+   "test_roc_auc": 0.6661960338624683,
+   "test_recall": 0.6182059213433495,
+   "test_brier": 0.09601055913298275,
+   "decision_threshold": 0.11,
+   "artifact": "models/1.0.0/model.json"
+  }
+ ],
+ "production": "1.0.0"
+}

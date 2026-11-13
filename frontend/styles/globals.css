@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #061428;
+  --color-navy-900: #0b2545;
+  --color-navy-800: #13315c;
+  --color-navy-700: #1d4170;
+  --color-navy-600: #2b5a8f;
+  --color-teal-700: #0b7a72;
+  --color-teal-600: #0e8f85;
+  --color-teal-500: #13a89e;
+  --color-teal-100: #d5f2ef;
+  --color-teal-50: #ecf9f7;
+  --color-risk-low: #2e7d5b;
+  --color-risk-moderate: #b26a00;
+  --color-risk-high: #b42318;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #f4f6f9;
+  color: #0f1b2d;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 11px;
+  fill: #4b5b70;
+}
+
+.recharts-legend-item-text {
+  font-size: 12px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal-500);
+  outline-offset: 2px;
+}

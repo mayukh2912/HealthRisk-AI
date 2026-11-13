@@ -1,0 +1,25 @@
+{
+  "model_version_prefix": "1.0",
+  "random_state": 42,
+  "test_size_folds": 5,
+  "cv_folds": 3,
+  "selection_metric": "average_precision",
+  "selection_rule": "Highest mean group-aware CV PR-AUC; ties (within 0.002) broken by higher ROC-AUC then lower Brier score. The test set is never used for selection.",
+  "one_hot_min_frequency": 100,
+  "threshold_strategy": "max_fbeta_on_oof_with_alert_cap",
+  "threshold_beta": 2.0,
+  "max_alert_rate": 0.40,
+  "risk_bands": [
+    {"name": "Low", "upper": 0.10, "guidance": "Below the historical 30-day readmission rate."},
+    {"name": "Moderate", "upper": 0.20, "guidance": "Around or modestly above the historical rate."},
+    {"name": "High", "upper": 1.01, "guidance": "Roughly twice the historical rate or more."}
+  ],
+  "shap_sample_size": 2000,
+  "models": {
+    "logistic_regression": {"n_iter": 6},
+    "decision_tree": {"n_iter": 8},
+    "random_forest": {"n_iter": 4},
+    "gradient_boosting": {"n_iter": 4},
+    "xgboost": {"n_iter": 8}
+  }
+}

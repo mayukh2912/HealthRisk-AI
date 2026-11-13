@@ -1,0 +1,4 @@
+# Runtime dependencies for the serverless inference API only (kept minimal on purpose).
+# Training dependencies live in requirements-ml.txt at the repository root.
+fastapi>=0.115,<1.0
+pydantic>=2.7,<3.0

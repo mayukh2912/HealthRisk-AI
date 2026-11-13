@@ -1,0 +1,185 @@
+{
+ "model_version": "1.0.0",
+ "model_name": "Gradient Boosting",
+ "model_key": "gradient_boosting",
+ "trained_at": "2026-11-12T19:27:15+00:00",
+ "training_seconds": 543.6,
+ "quick_run": false,
+ "dataset": {
+  "file": "diabetic_data.csv",
+  "sha256": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+  "raw_rows": 101766,
+  "cohort": {
+   "raw_rows": 101766,
+   "removed_duplicate_encounters": 0,
+   "removed_expired_or_hospice": 2423,
+   "removed_invalid_gender": 3,
+   "cohort_rows": 99340,
+   "cohort_patients": 69987
+  },
+  "train_rows": 79473,
+  "test_rows": 19867,
+  "train_patients": 56036,
+  "test_patients": 13951
+ },
+ "config": {
+  "model_version_prefix": "1.0",
+  "random_state": 42,
+  "test_size_folds": 5,
+  "cv_folds": 3,
+  "selection_metric": "average_precision",
+  "selection_rule": "Highest mean group-aware CV PR-AUC; ties (within 0.002) broken by higher ROC-AUC then lower Brier score. The test set is never used for selection.",
+  "one_hot_min_frequency": 100,
+  "threshold_strategy": "max_fbeta_on_oof_with_alert_cap",
+  "threshold_beta": 2.0,
+  "max_alert_rate": 0.4,
+  "risk_bands": [
+   {
+    "name": "Low",
+    "upper": 0.1,
+    "guidance": "Below the historical 30-day readmission rate."
+   },
+   {
+    "name": "Moderate",
+    "upper": 0.2,
+    "guidance": "Around or modestly above the historical rate."
+   },
+   {
+    "name": "High",
+    "upper": 1.01,
+    "guidance": "Roughly twice the historical rate or more."
+   }
+  ],
+  "shap_sample_size": 2000,
+  "models": {
+   "logistic_regression": {
+    "n_iter": 6
+   },
+   "decision_tree": {
+    "n_iter": 8
+   },
+   "random_forest": {
+    "n_iter": 4
+   },
+   "gradient_boosting": {
+    "n_iter": 4
+   },
+   "xgboost": {
+    "n_iter": 8
+   }
+  }
+ },
+ "config_sha256": "097ce4bf57e78f299043d2227716f4186b447839723d4fc18964548f34f3b22e",
+ "validation": {
+  "split": "StratifiedGroupKFold(n_splits=5) first fold held out by patient_nbr",
+  "cv": "StratifiedGroupKFold(n_splits=3) grouped by patient_nbr",
+  "patient_overlap_train_test": 0
+ },
+ "best_params": {
+  "n_estimators": 150,
+  "min_samples_leaf": 50,
+  "max_depth": 4,
+  "learning_rate": 0.05
+ },
+ "decision_threshold": 0.11,
+ "calibration": {
+  "type": "platt",
+  "a": 1.0444908672607505,
+  "b": 0.08713226721583464,
+  "fitted_on": "out-of-fold training predictions (patient-group CV)"
+ },
+ "risk_bands": [
+  {
+   "name": "Low",
+   "upper": 0.1,
+   "guidance": "Below the historical 30-day readmission rate."
+  },
+  {
+   "name": "Moderate",
+   "upper": 0.2,
+   "guidance": "Around or modestly above the historical rate."
+  },
+  {
+   "name": "High",
+   "upper": 1.01,
+   "guidance": "Roughly twice the historical rate or more."
+  }
+ ],
+ "metrics": {
+  "cv": {
+   "pr_auc_mean": 0.2265122813527299,
+   "pr_auc_std": 0.007101062798671292,
+   "roc_auc_mean": 0.6722779473302983,
+   "roc_auc_std": 0.005219996986412188,
+   "brier_mean": 0.09612091676747236,
+   "train_pr_auc_mean": 0.2735505368794095,
+   "n_candidates": 4
+  },
+  "test": {
+   "roc_auc": 0.6661960338624683,
+   "pr_auc": 0.23095470553477282,
+   "brier": 0.09601055913298275,
+   "log_loss": 0.33457399074915506,
+   "ece": 0.005714269634797374,
+   "prevalence": 0.1139074847737454,
+   "uncalibrated_brier": 0.0960287336446732,
+   "threshold": 0.11,
+   "accuracy": 0.6294860824482811,
+   "precision": 0.17717831813576496,
+   "recall": 0.6182059213433495,
+   "sensitivity": 0.6182059213433495,
+   "specificity": 0.6309361508748011,
+   "f1": 0.27542080913475736,
+   "f2": 0.4127330658484777,
+   "confusion_matrix": {
+    "tn": 11107,
+    "fp": 6497,
+    "fn": 864,
+    "tp": 1399
+   },
+   "alert_rate": 0.3974429959228872
+  }
+ },
+ "features": [
+  "time_in_hospital",
+  "num_lab_procedures",
+  "num_procedures",
+  "num_medications",
+  "number_outpatient",
+  "number_emergency",
+  "number_inpatient",
+  "number_diagnoses",
+  "age_years",
+  "total_prior_visits",
+  "any_prior_inpatient",
+  "meds_per_day",
+  "n_diabetes_meds",
+  "n_med_dose_changes",
+  "insulin_treated",
+  "on_diabetes_med",
+  "a1c_tested",
+  "glucose_tested",
+  "gender",
+  "admission_type",
+  "discharge_disposition",
+  "admission_source",
+  "medical_specialty",
+  "diag_1_group",
+  "diag_2_group",
+  "diag_3_group",
+  "max_glu_serum",
+  "A1Cresult",
+  "insulin",
+  "metformin",
+  "change",
+  "los_category"
+ ],
+ "export_parity_max_abs_diff": 4.440892098500626e-16,
+ "environment": {
+  "python": "3.13.18",
+  "scikit_learn": "1.9.1",
+  "xgboost": "3.4.1",
+  "pandas": "3.0.5",
+  "numpy": "2.5.3"
+ }
+}

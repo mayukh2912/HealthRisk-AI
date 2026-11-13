@@ -1,0 +1,656 @@
+{
+ "method": "shap.TreeExplainer (tree_path_dependent)",
+ "sample_size": 2000,
+ "base_value_log_odds_uncalibrated": -2.176373043327415,
+ "mean_abs_shap": [
+  {
+   "feature": "discharge_disposition",
+   "label": "Discharge disposition",
+   "mean_abs_shap": 0.21504
+  },
+  {
+   "feature": "number_inpatient",
+   "label": "Prior inpatient admissions",
+   "mean_abs_shap": 0.1975
+  },
+  {
+   "feature": "total_prior_visits",
+   "label": "Total prior visits",
+   "mean_abs_shap": 0.06802
+  },
+  {
+   "feature": "number_diagnoses",
+   "label": "Number of diagnoses",
+   "mean_abs_shap": 0.04651
+  },
+  {
+   "feature": "any_prior_inpatient",
+   "label": "Any prior inpatient stay",
+   "mean_abs_shap": 0.04322
+  },
+  {
+   "feature": "diag_1_group",
+   "label": "Primary diagnosis group",
+   "mean_abs_shap": 0.04189
+  },
+  {
+   "feature": "age_years",
+   "label": "Age",
+   "mean_abs_shap": 0.03929
+  },
+  {
+   "feature": "num_lab_procedures",
+   "label": "Lab procedures",
+   "mean_abs_shap": 0.0334
+  },
+  {
+   "feature": "n_diabetes_meds",
+   "label": "Diabetes medications",
+   "mean_abs_shap": 0.02771
+  },
+  {
+   "feature": "time_in_hospital",
+   "label": "Length of stay",
+   "mean_abs_shap": 0.02396
+  },
+  {
+   "feature": "diag_2_group",
+   "label": "Secondary diagnosis group",
+   "mean_abs_shap": 0.02031
+  },
+  {
+   "feature": "medical_specialty",
+   "label": "Physician specialty",
+   "mean_abs_shap": 0.02005
+  },
+  {
+   "feature": "meds_per_day",
+   "label": "Medications per day",
+   "mean_abs_shap": 0.01953
+  },
+  {
+   "feature": "diag_3_group",
+   "label": "Additional diagnosis group",
+   "mean_abs_shap": 0.01949
+  },
+  {
+   "feature": "number_emergency",
+   "label": "Prior emergency visits",
+   "mean_abs_shap": 0.01858
+  },
+  {
+   "feature": "num_medications",
+   "label": "Medications",
+   "mean_abs_shap": 0.01487
+  },
+  {
+   "feature": "insulin",
+   "label": "Insulin status",
+   "mean_abs_shap": 0.01441
+  },
+  {
+   "feature": "on_diabetes_med",
+   "label": "On diabetes medication",
+   "mean_abs_shap": 0.01409
+  },
+  {
+   "feature": "metformin",
+   "label": "Metformin status",
+   "mean_abs_shap": 0.01282
+  },
+  {
+   "feature": "n_med_dose_changes",
+   "label": "Diabetes dose changes",
+   "mean_abs_shap": 0.01239
+  },
+  {
+   "feature": "number_outpatient",
+   "label": "Prior outpatient visits",
+   "mean_abs_shap": 0.0074
+  },
+  {
+   "feature": "insulin_treated",
+   "label": "Insulin treated",
+   "mean_abs_shap": 0.00723
+  },
+  {
+   "feature": "A1Cresult",
+   "label": "HbA1c result",
+   "mean_abs_shap": 0.00649
+  },
+  {
+   "feature": "num_procedures",
+   "label": "Procedures",
+   "mean_abs_shap": 0.00625
+  },
+  {
+   "feature": "gender",
+   "label": "Gender",
+   "mean_abs_shap": 0.00513
+  },
+  {
+   "feature": "a1c_tested",
+   "label": "HbA1c tested",
+   "mean_abs_shap": 0.00475
+  },
+  {
+   "feature": "admission_type",
+   "label": "Admission type",
+   "mean_abs_shap": 0.0039
+  },
+  {
+   "feature": "admission_source",
+   "label": "Admission source",
+   "mean_abs_shap": 0.00315
+  },
+  {
+   "feature": "los_category",
+   "label": "Length-of-stay band",
+   "mean_abs_shap": 0.00186
+  },
+  {
+   "feature": "max_glu_serum",
+   "label": "Glucose serum result",
+   "mean_abs_shap": 0.00165
+  },
+  {
+   "feature": "change",
+   "label": "Medication changed",
+   "mean_abs_shap": 0.00017
+  },
+  {
+   "feature": "glucose_tested",
+   "label": "Glucose serum tested",
+   "mean_abs_shap": 0.0
+  }
+ ],
+ "shap_distribution": [
+  {
+   "feature": "discharge_disposition",
+   "label": "Discharge disposition",
+   "p5": -0.2149585420852906,
+   "p25": -0.18857804430120872,
+   "median": -0.13664308930740715,
+   "p75": 0.1574675091412079,
+   "p95": 0.39306556299478074,
+   "share_positive": 0.399
+  },
+  {
+   "feature": "number_inpatient",
+   "label": "Prior inpatient admissions",
+   "p5": -0.19454797326018344,
+   "p25": -0.17340751939475318,
+   "median": -0.1386198643583573,
+   "p75": 0.029501821840417372,
+   "p95": 0.5578284942248954,
+   "share_positive": 0.316
+  },
+  {
+   "feature": "total_prior_visits",
+   "label": "Total prior visits",
+   "p5": -0.0758433327045806,
+   "p25": -0.06239066952534738,
+   "median": -0.04665773806720523,
+   "p75": 0.060197170432041806,
+   "p95": 0.121371157294606,
+   "share_positive": 0.4345
+  },
+  {
+   "feature": "number_diagnoses",
+   "label": "Number of diagnoses",
+   "p5": -0.1431797566780165,
+   "p25": -0.023775805911626417,
+   "median": 0.014377082150931328,
+   "p75": 0.04254574000453226,
+   "p95": 0.07484601609286144,
+   "share_positive": 0.6725
+  },
+  {
+   "feature": "any_prior_inpatient",
+   "label": "Any prior inpatient stay",
+   "p5": -0.03847828619917396,
+   "p25": -0.032307957263106105,
+   "median": -0.028045985928408797,
+   "p75": 0.054630491144616856,
+   "p95": 0.09151467319854803,
+   "share_positive": 0.318
+  },
+  {
+   "feature": "diag_1_group",
+   "label": "Primary diagnosis group",
+   "p5": -0.07809765754189865,
+   "p25": -0.0267818158767298,
+   "median": -0.015569494320539298,
+   "p75": 0.043747103671589044,
+   "p95": 0.07067480830177597,
+   "share_positive": 0.387
+  },
+  {
+   "feature": "age_years",
+   "label": "Age",
+   "p5": -0.07596039089556494,
+   "p25": -0.042483738831081946,
+   "median": 0.019448264077131388,
+   "p75": 0.035884600206533786,
+   "p95": 0.04718349295656669,
+   "share_positive": 0.642
+  },
+  {
+   "feature": "num_lab_procedures",
+   "label": "Lab procedures",
+   "p5": -0.08107045851446708,
+   "p25": -0.027188210069697398,
+   "median": 0.012295983606248406,
+   "p75": 0.02661995908488107,
+   "p95": 0.053838779485386,
+   "share_positive": 0.631
+  },
+  {
+   "feature": "n_diabetes_meds",
+   "label": "Diabetes medications",
+   "p5": -0.047304352804526786,
+   "p25": -0.026306415536140704,
+   "median": -0.0038202285314258,
+   "p75": 0.027905502665451207,
+   "p95": 0.03565185072026592,
+   "share_positive": 0.48
+  },
+  {
+   "feature": "time_in_hospital",
+   "label": "Length of stay",
+   "p5": -0.04460437070098584,
+   "p25": -0.017406542872931134,
+   "median": -0.00680393943178359,
+   "p75": 0.007557956005303147,
+   "p95": 0.07097615020767743,
+   "share_positive": 0.3475
+  },
+  {
+   "feature": "diag_2_group",
+   "label": "Secondary diagnosis group",
+   "p5": -0.035041929225498,
+   "p25": -0.01259701780770315,
+   "median": -0.008838634693158704,
+   "p75": -0.005237493486105276,
+   "p95": 0.04872183252685487,
+   "share_positive": 0.1865
+  },
+  {
+   "feature": "medical_specialty",
+   "label": "Physician specialty",
+   "p5": -0.0719712010602575,
+   "p25": -0.0061889488600719265,
+   "median": 0.005354861642195954,
+   "p75": 0.009055403295813218,
+   "p95": 0.029122998385468356,
+   "share_positive": 0.6075
+  },
+  {
+   "feature": "meds_per_day",
+   "label": "Medications per day",
+   "p5": -0.07219284434820408,
+   "p25": -0.0026962180088676343,
+   "median": 0.004624858287779107,
+   "p75": 0.015571939870831898,
+   "p95": 0.034150419177241376,
+   "share_positive": 0.657
+  },
+  {
+   "feature": "diag_3_group",
+   "label": "Additional diagnosis group",
+   "p5": -0.023007430113593987,
+   "p25": -0.014821018697338331,
+   "median": -0.010364547110030133,
+   "p75": 0.0034624343596187388,
+   "p95": 0.06865962154585249,
+   "share_positive": 0.3035
+  },
+  {
+   "feature": "number_emergency",
+   "label": "Prior emergency visits",
+   "p5": -0.016354583173399904,
+   "p25": -0.012189928778374663,
+   "median": -0.009913482853110068,
+   "p75": -0.00766135236189813,
+   "p95": 0.05024263596575546,
+   "share_positive": 0.134
+  }
+ ],
+ "dependence": [
+  {
+   "feature": "number_inpatient",
+   "label": "Prior inpatient admissions",
+   "points": [
+    {
+     "value": 0.0,
+     "mean_shap": -0.1598,
+     "n": 1364
+    },
+    {
+     "value": 1.0,
+     "mean_shap": 0.0512,
+     "n": 375
+    },
+    {
+     "value": 2.0,
+     "mean_shap": 0.4406,
+     "n": 146
+    },
+    {
+     "value": 3.0,
+     "mean_shap": 0.6059,
+     "n": 64
+    },
+    {
+     "value": 4.0,
+     "mean_shap": 1.0728,
+     "n": 51
+    }
+   ]
+  },
+  {
+   "feature": "total_prior_visits",
+   "label": "Total prior visits",
+   "points": [
+    {
+     "value": 0.0,
+     "mean_shap": -0.0606,
+     "n": 1127
+    },
+    {
+     "value": 1.0,
+     "mean_shap": 0.0441,
+     "n": 370
+    },
+    {
+     "value": 2.0,
+     "mean_shap": 0.0925,
+     "n": 204
+    },
+    {
+     "value": 3.0,
+     "mean_shap": 0.0937,
+     "n": 112
+    },
+    {
+     "value": 4.0,
+     "mean_shap": 0.1028,
+     "n": 69
+    },
+    {
+     "value": 5.0,
+     "mean_shap": 0.1054,
+     "n": 44
+    },
+    {
+     "value": 6.0,
+     "mean_shap": 0.1423,
+     "n": 19
+    },
+    {
+     "value": 7.0,
+     "mean_shap": 0.1361,
+     "n": 55
+    }
+   ]
+  },
+  {
+   "feature": "number_diagnoses",
+   "label": "Number of diagnoses",
+   "points": [
+    {
+     "value": 2.0,
+     "mean_shap": -0.165,
+     "n": 19
+    },
+    {
+     "value": 3.0,
+     "mean_shap": -0.1397,
+     "n": 61
+    },
+    {
+     "value": 4.0,
+     "mean_shap": -0.1318,
+     "n": 104
+    },
+    {
+     "value": 5.0,
+     "mean_shap": -0.0561,
+     "n": 224
+    },
+    {
+     "value": 6.0,
+     "mean_shap": -0.0169,
+     "n": 202
+    },
+    {
+     "value": 7.0,
+     "mean_shap": 0.0068,
+     "n": 200
+    },
+    {
+     "value": 8.0,
+     "mean_shap": 0.0162,
+     "n": 218
+    },
+    {
+     "value": 9.0,
+     "mean_shap": 0.0432,
+     "n": 966
+    }
+   ]
+  },
+  {
+   "feature": "any_prior_inpatient",
+   "label": "Any prior inpatient stay",
+   "points": [
+    {
+     "value": 0.0,
+     "mean_shap": -0.0307,
+     "n": 1364
+    },
+    {
+     "value": 1.0,
+     "mean_shap": 0.07,
+     "n": 636
+    }
+   ]
+  }
+ ],
+ "permutation_importance_pr_auc": [
+  {
+   "feature": "number_inpatient",
+   "label": "Prior inpatient admissions",
+   "importance": 0.0686,
+   "std": 0.00323
+  },
+  {
+   "feature": "discharge_disposition",
+   "label": "Discharge disposition",
+   "importance": 0.0369,
+   "std": 0.00413
+  },
+  {
+   "feature": "diag_1_group",
+   "label": "Primary diagnosis group",
+   "importance": 0.00975,
+   "std": 0.0019
+  },
+  {
+   "feature": "total_prior_visits",
+   "label": "Total prior visits",
+   "importance": 0.00948,
+   "std": 0.00257
+  },
+  {
+   "feature": "medical_specialty",
+   "label": "Physician specialty",
+   "importance": 0.00588,
+   "std": 0.00175
+  },
+  {
+   "feature": "diag_2_group",
+   "label": "Secondary diagnosis group",
+   "importance": 0.00529,
+   "std": 0.00257
+  },
+  {
+   "feature": "number_diagnoses",
+   "label": "Number of diagnoses",
+   "importance": 0.00338,
+   "std": 0.0022
+  },
+  {
+   "feature": "diag_3_group",
+   "label": "Additional diagnosis group",
+   "importance": 0.00305,
+   "std": 0.00137
+  },
+  {
+   "feature": "age_years",
+   "label": "Age",
+   "importance": 0.00291,
+   "std": 0.00085
+  },
+  {
+   "feature": "insulin",
+   "label": "Insulin status",
+   "importance": 0.00241,
+   "std": 0.002
+  },
+  {
+   "feature": "num_medications",
+   "label": "Medications",
+   "importance": 0.0018,
+   "std": 0.00128
+  },
+  {
+   "feature": "number_emergency",
+   "label": "Prior emergency visits",
+   "importance": 0.00153,
+   "std": 0.00116
+  },
+  {
+   "feature": "any_prior_inpatient",
+   "label": "Any prior inpatient stay",
+   "importance": 0.00124,
+   "std": 0.0004
+  },
+  {
+   "feature": "A1Cresult",
+   "label": "HbA1c result",
+   "importance": 0.00088,
+   "std": 0.00046
+  },
+  {
+   "feature": "num_procedures",
+   "label": "Procedures",
+   "importance": 0.00079,
+   "std": 0.00059
+  },
+  {
+   "feature": "admission_type",
+   "label": "Admission type",
+   "importance": 0.00074,
+   "std": 0.00044
+  },
+  {
+   "feature": "max_glu_serum",
+   "label": "Glucose serum result",
+   "importance": 0.00047,
+   "std": 0.00021
+  },
+  {
+   "feature": "a1c_tested",
+   "label": "HbA1c tested",
+   "importance": 0.00036,
+   "std": 0.00041
+  },
+  {
+   "feature": "number_outpatient",
+   "label": "Prior outpatient visits",
+   "importance": 0.00021,
+   "std": 0.00023
+  },
+  {
+   "feature": "on_diabetes_med",
+   "label": "On diabetes medication",
+   "importance": 0.0002,
+   "std": 0.00048
+  },
+  {
+   "feature": "gender",
+   "label": "Gender",
+   "importance": 0.00018,
+   "std": 0.00044
+  },
+  {
+   "feature": "change",
+   "label": "Medication changed",
+   "importance": 6e-05,
+   "std": 0.00011
+  },
+  {
+   "feature": "admission_source",
+   "label": "Admission source",
+   "importance": 4e-05,
+   "std": 0.00051
+  },
+  {
+   "feature": "n_med_dose_changes",
+   "label": "Diabetes dose changes",
+   "importance": 2e-05,
+   "std": 0.00024
+  },
+  {
+   "feature": "glucose_tested",
+   "label": "Glucose serum tested",
+   "importance": 0.0,
+   "std": 0.0
+  },
+  {
+   "feature": "los_category",
+   "label": "Length-of-stay band",
+   "importance": -8e-05,
+   "std": 0.00014
+  },
+  {
+   "feature": "insulin_treated",
+   "label": "Insulin treated",
+   "importance": -0.00022,
+   "std": 0.00021
+  },
+  {
+   "feature": "metformin",
+   "label": "Metformin status",
+   "importance": -0.00042,
+   "std": 0.001
+  },
+  {
+   "feature": "time_in_hospital",
+   "label": "Length of stay",
+   "importance": -0.00058,
+   "std": 0.00074
+  },
+  {
+   "feature": "num_lab_procedures",
+   "label": "Lab procedures",
+   "importance": -0.00134,
+   "std": 0.00138
+  },
+  {
+   "feature": "n_diabetes_meds",
+   "label": "Diabetes medications",
+   "importance": -0.0015,
+   "std": 0.00115
+  },
+  {
+   "feature": "meds_per_day",
+   "label": "Medications per day",
+   "importance": -0.00332,
+   "std": 0.00145
+  }
+ ],
+ "summary_plot": "figures/shap_summary.png",
+ "interpretation_note": "SHAP values describe how the model's prediction depends on each input (predictive association learned from historical data). They are not causal effects: changing a feature in reality will not necessarily change risk."
+}

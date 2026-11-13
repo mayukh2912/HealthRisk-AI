@@ -1,0 +1,56 @@
+{
+  "dataset_file": "diabetic_data.csv",
+  "dataset_sha256": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+  "checks": {
+    "rows": 101766,
+    "columns": 50,
+    "unique_encounters": 101766,
+    "unique_patients": 71518,
+    "duplicate_encounter_ids": 0,
+    "duplicate_rows": 0,
+    "patients_with_multiple_encounters": 16773,
+    "max_encounters_per_patient": 40,
+    "encounters_from_repeat_patients_pct": 46.21,
+    "missing_pct": {
+      "weight": 96.86,
+      "medical_specialty": 49.08,
+      "payer_code": 39.56,
+      "race": 2.23,
+      "diag_3": 1.4,
+      "diag_2": 0.35,
+      "diag_1": 0.02
+    },
+    "invalid_values": {
+      "gender": 3
+    },
+    "constant_columns": [
+      "examide",
+      "citoglipton"
+    ],
+    "target_distribution": {
+      "NO": 54864,
+      ">30": 35545,
+      "<30": 11357
+    }
+  },
+  "cohort": {
+    "raw_rows": 101766,
+    "removed_duplicate_encounters": 0,
+    "removed_expired_or_hospice": 2423,
+    "removed_invalid_gender": 3,
+    "cohort_rows": 99340,
+    "cohort_patients": 69987
+  },
+  "cohort_positive_rate": 0.1139,
+  "excluded_columns": {
+    "readmitted": "Original outcome column (the target itself) - direct leakage.",
+    "readmitted_30d": "Derived binary target.",
+    "encounter_id": "Row identifier; carries no clinical signal and may encode time order.",
+    "patient_nbr": "Patient identifier; used ONLY as the grouping key for patient-aware splits.",
+    "weight": "~97% missing; unusable and inconsistently recorded.",
+    "payer_code": "~40% missing administrative/insurance field; a socioeconomic proxy that adds fairness risk without being a clinical factor at discharge.",
+    "race": "Sensitive attribute. Excluded from model inputs to avoid encoding demographic bias; retained only for subgroup (fairness) evaluation.",
+    "examide": "Constant column (single value in the entire dataset).",
+    "citoglipton": "Constant column (single value in the entire dataset)."
+  }
+}

@@ -1,0 +1,9 @@
+[project]
+name = "healthrisk-ai-api"
+version = "1.0.0"
+description = "HealthRisk AI inference API (FastAPI, dependency-light)"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115,<1.0", "pydantic>=2.7,<3.0"]
+
+[tool.vercel]
+entrypoint = "main:app"

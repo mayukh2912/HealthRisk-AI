@@ -1,0 +1,1268 @@
+{
+  "overview": {
+    "encounters": 99340,
+    "patients": 69987,
+    "positives": 11314,
+    "readmission_rate_30d": 0.1139,
+    "imbalance_ratio": 7.78,
+    "raw_label_distribution": {
+      "NO": 52524,
+      ">30": 35502,
+      "<30": 11314
+    }
+  },
+  "descriptive_stats": {
+    "time_in_hospital": {
+      "mean": 4.379,
+      "median": 4.0,
+      "std": 2.968,
+      "min": 1.0,
+      "max": 14.0,
+      "q1": 2.0,
+      "q3": 6.0,
+      "missing_pct": 0.0
+    },
+    "num_lab_procedures": {
+      "mean": 42.907,
+      "median": 44.0,
+      "std": 19.61,
+      "min": 1.0,
+      "max": 132.0,
+      "q1": 31.0,
+      "q3": 57.0,
+      "missing_pct": 0.0
+    },
+    "num_procedures": {
+      "mean": 1.334,
+      "median": 1.0,
+      "std": 1.703,
+      "min": 0.0,
+      "max": 6.0,
+      "q1": 0.0,
+      "q3": 2.0,
+      "missing_pct": 0.0
+    },
+    "num_medications": {
+      "mean": 15.979,
+      "median": 15.0,
+      "std": 8.095,
+      "min": 1.0,
+      "max": 81.0,
+      "q1": 10.0,
+      "q3": 20.0,
+      "missing_pct": 0.0
+    },
+    "number_outpatient": {
+      "mean": 0.369,
+      "median": 0.0,
+      "std": 1.265,
+      "min": 0.0,
+      "max": 42.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_pct": 0.0
+    },
+    "number_emergency": {
+      "mean": 0.198,
+      "median": 0.0,
+      "std": 0.938,
+      "min": 0.0,
+      "max": 76.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "missing_pct": 0.0
+    },
+    "number_inpatient": {
+      "mean": 0.631,
+      "median": 0.0,
+      "std": 1.26,
+      "min": 0.0,
+      "max": 21.0,
+      "q1": 0.0,
+      "q3": 1.0,
+      "missing_pct": 0.0
+    },
+    "number_diagnoses": {
+      "mean": 7.402,
+      "median": 8.0,
+      "std": 1.941,
+      "min": 1.0,
+      "max": 16.0,
+      "q1": 6.0,
+      "q3": 9.0,
+      "missing_pct": 0.0
+    }
+  },
+  "univariate": {
+    "age": [
+      {
+        "group": "[0-10)",
+        "count": 160,
+        "rate": 0.0187
+      },
+      {
+        "group": "[10-20)",
+        "count": 690,
+        "rate": 0.058
+      },
+      {
+        "group": "[20-30)",
+        "count": 1649,
+        "rate": 0.1431
+      },
+      {
+        "group": "[30-40)",
+        "count": 3764,
+        "rate": 0.1126
+      },
+      {
+        "group": "[40-50)",
+        "count": 9607,
+        "rate": 0.1066
+      },
+      {
+        "group": "[50-60)",
+        "count": 17060,
+        "rate": 0.0977
+      },
+      {
+        "group": "[60-70)",
+        "count": 22058,
+        "rate": 0.113
+      },
+      {
+        "group": "[70-80)",
+        "count": 25329,
+        "rate": 0.1206
+      },
+      {
+        "group": "[80-90)",
+        "count": 16434,
+        "rate": 0.1257
+      },
+      {
+        "group": "[90-100)",
+        "count": 2589,
+        "rate": 0.119
+      }
+    ],
+    "gender": [
+      {
+        "group": "Female",
+        "count": 53454,
+        "rate": 0.1146
+      },
+      {
+        "group": "Male",
+        "count": 45886,
+        "rate": 0.113
+      }
+    ],
+    "time_in_hospital": [
+      {
+        "group": "1",
+        "count": 13822,
+        "rate": 0.0839
+      },
+      {
+        "group": "2",
+        "count": 16891,
+        "rate": 0.1009
+      },
+      {
+        "group": "3",
+        "count": 17432,
+        "rate": 0.108
+      },
+      {
+        "group": "4",
+        "count": 13684,
+        "rate": 0.1199
+      },
+      {
+        "group": "5",
+        "count": 9749,
+        "rate": 0.1227
+      },
+      {
+        "group": "6",
+        "count": 7355,
+        "rate": 0.1286
+      },
+      {
+        "group": "7",
+        "count": 5696,
+        "rate": 0.1311
+      },
+      {
+        "group": "8",
+        "count": 4270,
+        "rate": 0.1459
+      },
+      {
+        "group": "9",
+        "count": 2879,
+        "rate": 0.1428
+      },
+      {
+        "group": "10",
+        "count": 2262,
+        "rate": 0.1481
+      },
+      {
+        "group": "11",
+        "count": 1770,
+        "rate": 0.1085
+      },
+      {
+        "group": "12",
+        "count": 1383,
+        "rate": 0.1396
+      },
+      {
+        "group": "13",
+        "count": 1152,
+        "rate": 0.1293
+      },
+      {
+        "group": "14",
+        "count": 995,
+        "rate": 0.1347
+      }
+    ],
+    "num_medications": [
+      {
+        "group": "[0, 5)",
+        "count": 2974,
+        "rate": 0.0767
+      },
+      {
+        "group": "[10, 15)",
+        "count": 28397,
+        "rate": 0.1074
+      },
+      {
+        "group": "[15, 20)",
+        "count": 24186,
+        "rate": 0.1214
+      },
+      {
+        "group": "[20, 25)",
+        "count": 13935,
+        "rate": 0.1351
+      },
+      {
+        "group": "[25, 30)",
+        "count": 6931,
+        "rate": 0.129
+      },
+      {
+        "group": "[30, 40)",
+        "count": 4342,
+        "rate": 0.1317
+      },
+      {
+        "group": "[40, 100)",
+        "count": 1483,
+        "rate": 0.1194
+      },
+      {
+        "group": "[5, 10)",
+        "count": 17092,
+        "rate": 0.0921
+      }
+    ],
+    "num_lab_procedures": [
+      {
+        "group": "[0, 10)",
+        "count": 7448,
+        "rate": 0.0965
+      },
+      {
+        "group": "[10, 20)",
+        "count": 6105,
+        "rate": 0.1055
+      },
+      {
+        "group": "[20, 30)",
+        "count": 8932,
+        "rate": 0.1023
+      },
+      {
+        "group": "[30, 40)",
+        "count": 16963,
+        "rate": 0.1098
+      },
+      {
+        "group": "[40, 50)",
+        "count": 22054,
+        "rate": 0.1166
+      },
+      {
+        "group": "[50, 60)",
+        "count": 17664,
+        "rate": 0.1196
+      },
+      {
+        "group": "[60, 70)",
+        "count": 12632,
+        "rate": 0.1236
+      },
+      {
+        "group": "[70, 80)",
+        "count": 5483,
+        "rate": 0.122
+      },
+      {
+        "group": "[80, 200)",
+        "count": 2059,
+        "rate": 0.1258
+      }
+    ],
+    "number_inpatient": [
+      {
+        "group": "0",
+        "count": 66242,
+        "rate": 0.0859
+      },
+      {
+        "group": "1",
+        "count": 18984,
+        "rate": 0.1325
+      },
+      {
+        "group": "2",
+        "count": 7300,
+        "rate": 0.1793
+      },
+      {
+        "group": "3",
+        "count": 3271,
+        "rate": 0.2103
+      },
+      {
+        "group": "4",
+        "count": 1574,
+        "rate": 0.2414
+      },
+      {
+        "group": "5+",
+        "count": 1969,
+        "rate": 0.3713
+      }
+    ],
+    "number_emergency": [
+      {
+        "group": "0",
+        "count": 88246,
+        "rate": 0.1069
+      },
+      {
+        "group": "1",
+        "count": 7474,
+        "rate": 0.1468
+      },
+      {
+        "group": "2",
+        "count": 1984,
+        "rate": 0.1875
+      },
+      {
+        "group": "3+",
+        "count": 1636,
+        "rate": 0.2531
+      }
+    ],
+    "number_outpatient": [
+      {
+        "group": "0",
+        "count": 82991,
+        "rate": 0.1089
+      },
+      {
+        "group": "1",
+        "count": 8349,
+        "rate": 0.1421
+      },
+      {
+        "group": "2",
+        "count": 3509,
+        "rate": 0.1408
+      },
+      {
+        "group": "3+",
+        "count": 4491,
+        "rate": 0.1325
+      }
+    ]
+  },
+  "bivariate": {
+    "insulin": [
+      {
+        "group": "No",
+        "count": 46376,
+        "rate": 0.1021
+      },
+      {
+        "group": "Steady",
+        "count": 30069,
+        "rate": 0.1137
+      },
+      {
+        "group": "Up",
+        "count": 10987,
+        "rate": 0.1333
+      },
+      {
+        "group": "Down",
+        "count": 11908,
+        "rate": 0.1422
+      }
+    ],
+    "A1Cresult": [
+      {
+        "group": "None",
+        "count": 82506,
+        "rate": 0.1169
+      },
+      {
+        "group": "Norm",
+        "count": 4922,
+        "rate": 0.0977
+      },
+      {
+        "group": ">7",
+        "count": 3775,
+        "rate": 0.1015
+      },
+      {
+        "group": ">8",
+        "count": 8137,
+        "rate": 0.0994
+      }
+    ],
+    "max_glu_serum": [
+      {
+        "group": "None",
+        "count": 94188,
+        "rate": 0.1131
+      },
+      {
+        "group": "Norm",
+        "count": 2545,
+        "rate": 0.1155
+      },
+      {
+        "group": ">200",
+        "count": 1419,
+        "rate": 0.1297
+      },
+      {
+        "group": ">300",
+        "count": 1188,
+        "rate": 0.1507
+      }
+    ],
+    "medical_specialty": [
+      {
+        "group": "Missing",
+        "count": 48614,
+        "rate": 0.1183
+      },
+      {
+        "group": "InternalMedicine",
+        "count": 14237,
+        "rate": 0.1153
+      },
+      {
+        "group": "Emergency/Trauma",
+        "count": 7419,
+        "rate": 0.1139
+      },
+      {
+        "group": "Family/GeneralPractice",
+        "count": 7252,
+        "rate": 0.1212
+      },
+      {
+        "group": "Cardiology",
+        "count": 5278,
+        "rate": 0.0803
+      },
+      {
+        "group": "Surgery-General",
+        "count": 3059,
+        "rate": 0.1118
+      },
+      {
+        "group": "Nephrology",
+        "count": 1539,
+        "rate": 0.1611
+      },
+      {
+        "group": "Orthopedics",
+        "count": 1392,
+        "rate": 0.1085
+      },
+      {
+        "group": "Orthopedics-Reconstructive",
+        "count": 1230,
+        "rate": 0.0748
+      },
+      {
+        "group": "Radiologist",
+        "count": 1121,
+        "rate": 0.091
+      },
+      {
+        "group": "Pulmonology",
+        "count": 854,
+        "rate": 0.1124
+      },
+      {
+        "group": "Psychiatry",
+        "count": 853,
+        "rate": 0.1219
+      }
+    ],
+    "admission_type": [
+      {
+        "group": "Emergency",
+        "count": 52369,
+        "rate": 0.1183
+      },
+      {
+        "group": "Elective",
+        "count": 18667,
+        "rate": 0.1049
+      },
+      {
+        "group": "Urgent",
+        "count": 18132,
+        "rate": 0.1135
+      },
+      {
+        "group": "Not available",
+        "count": 10144,
+        "rate": 0.1087
+      }
+    ],
+    "discharge_disposition": [
+      {
+        "group": "Rehab facility",
+        "count": 1992,
+        "rate": 0.2771
+      },
+      {
+        "group": "Other inpatient care",
+        "count": 1184,
+        "rate": 0.2086
+      },
+      {
+        "group": "Short-term hospital",
+        "count": 2128,
+        "rate": 0.1607
+      },
+      {
+        "group": "Skilled nursing facility",
+        "count": 13954,
+        "rate": 0.1466
+      },
+      {
+        "group": "Left against medical advice",
+        "count": 623,
+        "rate": 0.1445
+      },
+      {
+        "group": "Intermediate care facility",
+        "count": 815,
+        "rate": 0.1276
+      },
+      {
+        "group": "Home with home health",
+        "count": 12902,
+        "rate": 0.127
+      },
+      {
+        "group": "Not available",
+        "count": 4680,
+        "rate": 0.1177
+      },
+      {
+        "group": "Home",
+        "count": 60232,
+        "rate": 0.093
+      },
+      {
+        "group": "Long-term care hospital",
+        "count": 412,
+        "rate": 0.0728
+      }
+    ],
+    "diag_1_group": [
+      {
+        "group": "Missing",
+        "count": 20,
+        "rate": 0.25
+      },
+      {
+        "group": "Diabetes",
+        "count": 8661,
+        "rate": 0.131
+      },
+      {
+        "group": "Injury",
+        "count": 6851,
+        "rate": 0.1241
+      },
+      {
+        "group": "Circulatory",
+        "count": 29680,
+        "rate": 0.1169
+      },
+      {
+        "group": "Other",
+        "count": 17793,
+        "rate": 0.1168
+      },
+      {
+        "group": "Genitourinary",
+        "count": 5002,
+        "rate": 0.1104
+      },
+      {
+        "group": "Neoplasms",
+        "count": 3131,
+        "rate": 0.1089
+      },
+      {
+        "group": "Digestive",
+        "count": 9333,
+        "rate": 0.1082
+      },
+      {
+        "group": "Respiratory",
+        "count": 13934,
+        "rate": 0.1006
+      },
+      {
+        "group": "Musculoskeletal",
+        "count": 4935,
+        "rate": 0.0954
+      }
+    ],
+    "diabetesMed": [
+      {
+        "group": "No",
+        "count": 22623,
+        "rate": 0.0987
+      },
+      {
+        "group": "Yes",
+        "count": 76717,
+        "rate": 0.1184
+      }
+    ],
+    "change": [
+      {
+        "group": "Ch",
+        "count": 46120,
+        "rate": 0.1202
+      },
+      {
+        "group": "No",
+        "count": 53220,
+        "rate": 0.1084
+      }
+    ]
+  },
+  "multivariate": {
+    "spearman_correlation": {
+      "columns": [
+        "time_in_hospital",
+        "num_lab_procedures",
+        "num_procedures",
+        "num_medications",
+        "number_outpatient",
+        "number_emergency",
+        "number_inpatient",
+        "number_diagnoses",
+        "readmitted_30d"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.339,
+          0.187,
+          0.463,
+          -0.014,
+          -0.001,
+          0.093,
+          0.238,
+          0.053
+        ],
+        [
+          0.339,
+          1.0,
+          0.017,
+          0.248,
+          -0.024,
+          0.008,
+          0.041,
+          0.166,
+          0.024
+        ],
+        [
+          0.187,
+          0.017,
+          1.0,
+          0.349,
+          -0.024,
+          -0.047,
+          -0.064,
+          0.063,
+          -0.005
+        ],
+        [
+          0.463,
+          0.248,
+          0.349,
+          1.0,
+          0.075,
+          0.046,
+          0.101,
+          0.294,
+          0.048
+        ],
+        [
+          -0.014,
+          -0.024,
+          -0.024,
+          0.075,
+          1.0,
+          0.179,
+          0.157,
+          0.114,
+          0.035
+        ],
+        [
+          -0.001,
+          0.008,
+          -0.047,
+          0.046,
+          0.179,
+          1.0,
+          0.223,
+          0.093,
+          0.064
+        ],
+        [
+          0.093,
+          0.041,
+          -0.064,
+          0.101,
+          0.157,
+          0.223,
+          1.0,
+          0.136,
+          0.141
+        ],
+        [
+          0.238,
+          0.166,
+          0.063,
+          0.294,
+          0.114,
+          0.093,
+          0.136,
+          1.0,
+          0.052
+        ],
+        [
+          0.053,
+          0.024,
+          -0.005,
+          0.048,
+          0.035,
+          0.064,
+          0.141,
+          0.052,
+          1.0
+        ]
+      ]
+    },
+    "age_by_admission_type": [
+      {
+        "age": "[0-10)",
+        "admission_type": "Elective",
+        "rate": 0.0625,
+        "count": 16
+      },
+      {
+        "age": "[0-10)",
+        "admission_type": "Emergency",
+        "rate": 0.0096,
+        "count": 104
+      },
+      {
+        "age": "[0-10)",
+        "admission_type": "Urgent",
+        "rate": 0.0,
+        "count": 25
+      },
+      {
+        "age": "[10-20)",
+        "admission_type": "Elective",
+        "rate": 0.0899,
+        "count": 89
+      },
+      {
+        "age": "[10-20)",
+        "admission_type": "Emergency",
+        "rate": 0.0567,
+        "count": 441
+      },
+      {
+        "age": "[10-20)",
+        "admission_type": "Urgent",
+        "rate": 0.045,
+        "count": 111
+      },
+      {
+        "age": "[20-30)",
+        "admission_type": "Elective",
+        "rate": 0.0767,
+        "count": 287
+      },
+      {
+        "age": "[20-30)",
+        "admission_type": "Emergency",
+        "rate": 0.1549,
+        "count": 936
+      },
+      {
+        "age": "[20-30)",
+        "admission_type": "Urgent",
+        "rate": 0.1725,
+        "count": 284
+      },
+      {
+        "age": "[30-40)",
+        "admission_type": "Elective",
+        "rate": 0.0859,
+        "count": 710
+      },
+      {
+        "age": "[30-40)",
+        "admission_type": "Emergency",
+        "rate": 0.1217,
+        "count": 2062
+      },
+      {
+        "age": "[30-40)",
+        "admission_type": "Urgent",
+        "rate": 0.1126,
+        "count": 604
+      },
+      {
+        "age": "[40-50)",
+        "admission_type": "Elective",
+        "rate": 0.095,
+        "count": 1611
+      },
+      {
+        "age": "[40-50)",
+        "admission_type": "Emergency",
+        "rate": 0.1094,
+        "count": 5209
+      },
+      {
+        "age": "[40-50)",
+        "admission_type": "Urgent",
+        "rate": 0.1131,
+        "count": 1777
+      },
+      {
+        "age": "[50-60)",
+        "admission_type": "Elective",
+        "rate": 0.0976,
+        "count": 3473
+      },
+      {
+        "age": "[50-60)",
+        "admission_type": "Emergency",
+        "rate": 0.0971,
+        "count": 8781
+      },
+      {
+        "age": "[50-60)",
+        "admission_type": "Urgent",
+        "rate": 0.0981,
+        "count": 3109
+      },
+      {
+        "age": "[60-70)",
+        "admission_type": "Elective",
+        "rate": 0.1012,
+        "count": 4930
+      },
+      {
+        "age": "[60-70)",
+        "admission_type": "Emergency",
+        "rate": 0.1193,
+        "count": 10878
+      },
+      {
+        "age": "[60-70)",
+        "admission_type": "Urgent",
+        "rate": 0.1139,
+        "count": 4179
+      },
+      {
+        "age": "[70-80)",
+        "admission_type": "Elective",
+        "rate": 0.1076,
+        "count": 4999
+      },
+      {
+        "age": "[70-80)",
+        "admission_type": "Emergency",
+        "rate": 0.128,
+        "count": 12981
+      },
+      {
+        "age": "[70-80)",
+        "admission_type": "Urgent",
+        "rate": 0.1186,
+        "count": 4537
+      },
+      {
+        "age": "[80-90)",
+        "admission_type": "Elective",
+        "rate": 0.1348,
+        "count": 2315
+      },
+      {
+        "age": "[80-90)",
+        "admission_type": "Emergency",
+        "rate": 0.1284,
+        "count": 9353
+      },
+      {
+        "age": "[80-90)",
+        "admission_type": "Urgent",
+        "rate": 0.1143,
+        "count": 3054
+      },
+      {
+        "age": "[90-100)",
+        "admission_type": "Elective",
+        "rate": 0.1055,
+        "count": 237
+      },
+      {
+        "age": "[90-100)",
+        "admission_type": "Emergency",
+        "rate": 0.1158,
+        "count": 1624
+      },
+      {
+        "age": "[90-100)",
+        "admission_type": "Urgent",
+        "rate": 0.1482,
+        "count": 452
+      }
+    ],
+    "age_by_prior_inpatient": {
+      "rows": [
+        "[0-10)",
+        "[10-20)",
+        "[20-30)",
+        "[30-40)",
+        "[40-50)",
+        "[50-60)",
+        "[60-70)",
+        "[70-80)",
+        "[80-90)",
+        "[90-100)"
+      ],
+      "columns": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5+"
+      ],
+      "matrix": [
+        [
+          0.0135,
+          0.0909,
+          0.0,
+          null,
+          null,
+          null
+        ],
+        [
+          0.0373,
+          0.0722,
+          0.1795,
+          0.15,
+          0.1,
+          0.2
+        ],
+        [
+          0.0552,
+          0.1743,
+          0.2913,
+          0.2031,
+          0.3333,
+          0.5188
+        ],
+        [
+          0.0643,
+          0.133,
+          0.2386,
+          0.2715,
+          0.2824,
+          0.4044
+        ],
+        [
+          0.0705,
+          0.1263,
+          0.1795,
+          0.2058,
+          0.2335,
+          0.3976
+        ],
+        [
+          0.0683,
+          0.1196,
+          0.1731,
+          0.1902,
+          0.2182,
+          0.3934
+        ],
+        [
+          0.0858,
+          0.1344,
+          0.1743,
+          0.228,
+          0.2245,
+          0.3624
+        ],
+        [
+          0.0976,
+          0.1371,
+          0.1736,
+          0.1966,
+          0.2534,
+          0.3489
+        ],
+        [
+          0.1051,
+          0.1375,
+          0.1769,
+          0.2241,
+          0.254,
+          0.2432
+        ],
+        [
+          0.1041,
+          0.1257,
+          0.1932,
+          0.1507,
+          0.3043,
+          0.1842
+        ]
+      ]
+    }
+  },
+  "statistical_tests": {
+    "numeric_mann_whitney": [
+      {
+        "feature": "time_in_hospital",
+        "mean_readmitted": 4.768,
+        "mean_not_readmitted": 4.329,
+        "median_readmitted": 4.0,
+        "median_not_readmitted": 4.0,
+        "rank_biserial": 0.0954,
+        "p_value": 1.5879284098807963e-62
+      },
+      {
+        "feature": "num_lab_procedures",
+        "mean_readmitted": 44.222,
+        "mean_not_readmitted": 42.738,
+        "median_readmitted": 45.0,
+        "median_not_readmitted": 44.0,
+        "rank_biserial": 0.0438,
+        "p_value": 2.910622235418684e-14
+      },
+      {
+        "feature": "num_procedures",
+        "mean_readmitted": 1.283,
+        "mean_not_readmitted": 1.341,
+        "median_readmitted": 1.0,
+        "median_not_readmitted": 1.0,
+        "rank_biserial": -0.0078,
+        "p_value": 0.15284202700655236
+      },
+      {
+        "feature": "num_medications",
+        "mean_readmitted": 16.909,
+        "mean_not_readmitted": 15.86,
+        "median_readmitted": 16.0,
+        "median_not_readmitted": 15.0,
+        "rank_biserial": 0.0872,
+        "p_value": 9.394582291249124e-52
+      },
+      {
+        "feature": "number_outpatient",
+        "mean_readmitted": 0.437,
+        "mean_not_readmitted": 0.361,
+        "median_readmitted": 0.0,
+        "median_not_readmitted": 0.0,
+        "rank_biserial": 0.0407,
+        "p_value": 7.719281277130703e-28
+      },
+      {
+        "feature": "number_emergency",
+        "mean_readmitted": 0.358,
+        "mean_not_readmitted": 0.178,
+        "median_readmitted": 0.0,
+        "median_not_readmitted": 0.0,
+        "rank_biserial": 0.064,
+        "p_value": 1.2446897513436821e-91
+      },
+      {
+        "feature": "number_inpatient",
+        "mean_readmitted": 1.223,
+        "mean_not_readmitted": 0.555,
+        "median_readmitted": 0.0,
+        "median_not_readmitted": 0.0,
+        "rank_biserial": 0.2145,
+        "p_value": 0.0
+      },
+      {
+        "feature": "number_diagnoses",
+        "mean_readmitted": 7.692,
+        "mean_not_readmitted": 7.364,
+        "median_readmitted": 9.0,
+        "median_not_readmitted": 8.0,
+        "rank_biserial": 0.088,
+        "p_value": 2.632620518009901e-59
+      }
+    ],
+    "categorical_chi_square": [
+      {
+        "feature": "discharge_disposition",
+        "chi2": 1314.31,
+        "dof": 19,
+        "p_value": 3.0157648502318275e-267,
+        "cramers_v": 0.115
+      },
+      {
+        "feature": "specialty",
+        "chi2": 372.96,
+        "dof": 72,
+        "p_value": 3.6316412422822875e-42,
+        "cramers_v": 0.0613
+      },
+      {
+        "feature": "insulin",
+        "chi2": 199.22,
+        "dof": 3,
+        "p_value": 6.221589349418076e-43,
+        "cramers_v": 0.0448
+      },
+      {
+        "feature": "age",
+        "chi2": 133.62,
+        "dof": 9,
+        "p_value": 2.1286207555517365e-24,
+        "cramers_v": 0.0367
+      },
+      {
+        "feature": "diag_1_group",
+        "chi2": 85.47,
+        "dof": 9,
+        "p_value": 1.3161004677788603e-14,
+        "cramers_v": 0.0293
+      },
+      {
+        "feature": "metformin",
+        "chi2": 69.91,
+        "dof": 3,
+        "p_value": 4.46687652612602e-15,
+        "cramers_v": 0.0265
+      },
+      {
+        "feature": "diabetesMed",
+        "chi2": 66.75,
+        "dof": 1,
+        "p_value": 3.0769481388015795e-16,
+        "cramers_v": 0.026
+      },
+      {
+        "feature": "A1Cresult",
+        "chi2": 42.58,
+        "dof": 3,
+        "p_value": 3.0267119133591224e-09,
+        "cramers_v": 0.0207
+      },
+      {
+        "feature": "change",
+        "chi2": 34.15,
+        "dof": 1,
+        "p_value": 5.100858963996715e-09,
+        "cramers_v": 0.0186
+      },
+      {
+        "feature": "admission_type",
+        "chi2": 29.99,
+        "dof": 5,
+        "p_value": 1.4792266176209739e-05,
+        "cramers_v": 0.0174
+      },
+      {
+        "feature": "race",
+        "chi2": 26.88,
+        "dof": 5,
+        "p_value": 6.009707822265523e-05,
+        "cramers_v": 0.0165
+      },
+      {
+        "feature": "max_glu_serum",
+        "chi2": 20.01,
+        "dof": 3,
+        "p_value": 0.0001688112252312286,
+        "cramers_v": 0.0142
+      },
+      {
+        "feature": "gender",
+        "chi2": 0.63,
+        "dof": 1,
+        "p_value": 0.42837499474371954,
+        "cramers_v": 0.0025
+      }
+    ],
+    "caveat": "Encounters from the same patient are not independent, so p-values are optimistic; use effect sizes (Cram\u00e9r's V, rank-biserial) for ranking."
+  },
+  "findings": [
+    "11,314 of 99,340 cohort encounters (11.4%) were readmitted within 30 days - a class imbalance of about 7.8:1, so accuracy alone would be misleading.",
+    "The readmission rate rises from 8.6% for patients with no inpatient stay in the prior year to 37.1% for those with 5+ prior stays.",
+    "Prior emergency visits show a similar gradient: 10.7% (none) vs 25.3% (3+ visits).",
+    "Among age brackets with at least 1,000 encounters, the rate ranges from 9.8% ([50-60)) to 14.3% ([20-30)).",
+    "Readmission is 8.4% after a 1-day stay and 13.5% after a 14-day stay.",
+    "Discharge destination matters: 'Rehab facility' has a 27.7% rate vs 'Home' at 9.3% (groups with \u22651,000 encounters).",
+    "HbA1c was not measured in 83% of encounters; readmission rate is 11.7% when untested vs 9.9% when >8%.",
+    "Encounters where insulin was adjusted (Up 13.3%, Down 14.2%) show higher rates than no insulin (10.2%).",
+    "By effect size, the categorical variable most associated with readmission is 'discharge_disposition' (Cram\u00e9r's V = 0.115); all associations are weak individually, which foreshadows modest discrimination for any model on this dataset."
+  ],
+  "figures": [
+    "reports/figures/eda_univariate.png",
+    "reports/figures/eda_bivariate.png",
+    "reports/figures/eda_correlation_heatmap.png",
+    "reports/figures/eda_age_by_prior_inpatient.png"
+  ]
+}

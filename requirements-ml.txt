@@ -1,0 +1,13 @@
+# Offline training / EDA environment (NOT deployed). Python 3.12+.
+# Versions are those used to produce the committed model v1.0.0.
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+scipy==1.18.1
+xgboost==3.4.1        # or `xgboost-cpu==3.4.1` for a smaller CPU-only wheel
+shap==0.54.1
+matplotlib==3.11.2
+joblib==1.6.0
+nbconvert==7.17.2
+ipykernel
+kagglehub             # optional: automatic Kaggle download
